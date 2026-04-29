@@ -1,11 +1,9 @@
-#open the file
+#write file
 
-#create a list
+#variable
 
-#read every line
+#enter
 
-#open 2 files
-
-#decide where each number goes
+#question
 
 #close
