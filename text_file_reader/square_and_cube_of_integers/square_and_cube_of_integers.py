@@ -1,14 +1,14 @@
-with open("integers.txt", "r") as source:
-    file_double = open("double.txt", "w")
-    file_triple = open("triple.txt", "w")
+def process_integers():
+    with open("integers.txt", "r") as source, \
+         open("double.txt", "w") as double_out, \
+         open("triple.txt", "w") as triple_out:
 
-    for line in source:
-        num = int(line.strip())
-        if num % 2 == 0:
-           file_double.write(str(num ** 2) + "\n")
-        else:
-           file_triple.write(str(num ** 3) + "\n")
+      for line in source:
+         if line.strip():
+            number = int(line.strip())
+         if number % 2 == 0:
+            double_out.write(f"{val**2}\n")
+         else:
+           triple_out.write(f"{val**3}\n")
 
-    file_double.close()
-    file_triple.close()
-print("Files generated.")
+process_integers()
