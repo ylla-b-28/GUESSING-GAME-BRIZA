@@ -1,9 +1,7 @@
-#write file
+#split numbers
 
 #variable
 
-#enter
-
-#question
+#operation
 
 #close
